@@ -1,4 +1,4 @@
-# Backend da Semana Oministack 8
+# Semana Oministack 8
 
 ## Projeto Tindev
 
