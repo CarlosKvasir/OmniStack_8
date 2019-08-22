@@ -6,10 +6,10 @@ routes.get('/', (req, res) => {
   return res.json({ message: `Hello ${req.query.name}` });
 });
 
-routes.post('/dev', (req, res) => {
-  return res.json({
-    data: true,
-  });
-})
+routes.post('/devs', (req, res) => {
+  console.log(req.body);
+
+  return res.json({ ok: true });
+});
 
 module.exports = routes;
