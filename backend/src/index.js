@@ -8,7 +8,7 @@ const routes = require('./routes');
 const server = express();
 
 mongoose.connect(
-  `mongodb+srv://oministack:${process.env.MONGO_PW}@clustertest-qzssj.mongodb.net/oministack_8?retryWrites=true&w=majority`, {
+  `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@${process.env.MONGO_SERVER}/${process.env.MONGO_BASE}?retryWrites=true&w=majority`, {
     useNewUrlParser: true
   });
 
