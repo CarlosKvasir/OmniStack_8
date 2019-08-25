@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Main.css';
 
 import api from '../services/api';
@@ -8,6 +8,8 @@ import like from '../assets/like.svg';
 import dislike from '../assets/dislike.svg';
 
 export default function Main({ match }) {
+  const [users, setUsers] = useState([]);
+
   useEffect(() => {
     async function loadUsers() {
       const response = await api.get('/devs', {
@@ -16,7 +18,7 @@ export default function Main({ match }) {
         }
       });
 
-      console.log(response.data);
+      setUsers(response.data);
     }
 
     loadUsers();
