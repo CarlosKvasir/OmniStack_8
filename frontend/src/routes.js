@@ -8,7 +8,7 @@ export default function Routers() {
   return (
     <BrowserRouter>
       <Route path="/" exact component={Login} />
-      <Route path="/dev:id" component={Main} />
+      <Route path="/dev/:id" component={Main} />
     </BrowserRouter>
   );
 }
