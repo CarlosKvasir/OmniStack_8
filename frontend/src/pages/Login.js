@@ -11,6 +11,7 @@ export default function Login() {
         <input
           placeholder="Digite seu usuário no Github"
         />
+        <button type="submit">Enviar</button>
       </form>
     </div>
   );
