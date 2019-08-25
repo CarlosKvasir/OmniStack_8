@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Main.css';
 
 import logo from '../assets/logo.svg';
