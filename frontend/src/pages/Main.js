@@ -28,22 +28,26 @@ export default function Main({ match }) {
     <div className="main-container">
       <img src={logo} alt='Tindev' />
       <ul>
-        <li>
-          <img src="https://avatars1.githubusercontent.com/u/4096456?v=4"
-            alt="imagem do xxx" />
-          <footer>
-            <strong>Marco Bruno</strong>
-            <p>Iniciei minha carreira como Dev. de HMI.Apaixonado pela Web, migrei para Dev.Front-End/UX e agora trabalhando na CollabCollab com Front-End e UX</p>
-          </footer>
-          <div className="buttons">
-            <button type="button">
-              <img src={dislike} alt="dislike" />
-            </button>
-            <button type="button">
-              <img src={like} alt="like" />
-            </button>
-          </div>
-        </li>
+        {users.map(user => (
+          <li key={user._id}>
+            <img src={user.avatar}
+              alt={"Foto de " + user.name} />
+            <footer>
+              <strong>{user.name}</strong>
+              <p>{user.bio}</p>
+            </footer>
+            <div className="buttons">
+              <button type="button">
+                <img src={dislike} alt="dislike" />
+              </button>
+              <button type="button">
+                <img src={like} alt="like" />
+              </button>
+            </div>
+          </li>
+        )
+        )}
+
       </ul>
     </div>
   );
