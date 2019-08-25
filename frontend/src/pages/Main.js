@@ -24,6 +24,13 @@ export default function Main({ match }) {
     loadUsers();
   }, [match.params.id]);
 
+  async function handleLike(targetId) {
+    console.log('like', targetId);
+  }
+  async function handleDislike(targetId) {
+    console.log('dislike', targetId);
+  }
+
   return (
     <div className="main-container">
       <img src={logo} alt='Tindev' />
@@ -37,10 +44,10 @@ export default function Main({ match }) {
               <p>{user.bio}</p>
             </footer>
             <div className="buttons">
-              <button type="button">
+              <button type="button" onClick={() => handleDislike(user._id)}>
                 <img src={dislike} alt="dislike" />
               </button>
-              <button type="button">
+              <button type="button" onClick={() => handleLike(user._id)}>
                 <img src={like} alt="like" />
               </button>
             </div>
