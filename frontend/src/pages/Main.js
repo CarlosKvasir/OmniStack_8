@@ -35,10 +35,10 @@ export default function Main({ match }) {
           </footer>
           <div className="buttons">
             <button type="button">
-              <img src={like} alt="like" />
+              <img src={dislike} alt="dislike" />
             </button>
             <button type="button">
-              <img src={dislike} alt="dislike" />
+              <img src={like} alt="like" />
             </button>
           </div>
         </li>
@@ -51,10 +51,10 @@ export default function Main({ match }) {
           </footer>
           <div className="buttons">
             <button type="button">
-              <img src={like} alt="like" />
+              <img src={dislike} alt="dislike" />
             </button>
             <button type="button">
-              <img src={dislike} alt="dislike" />
+              <img src={like} alt="like" />
             </button>
           </div>
         </li>
@@ -67,10 +67,10 @@ export default function Main({ match }) {
           </footer>
           <div className="buttons">
             <button type="button">
-              <img src={like} alt="like" />
+              <img src={dislike} alt="dislike" />
             </button>
             <button type="button">
-              <img src={dislike} alt="dislike" />
+              <img src={like} alt="like" />
             </button>
           </div>
         </li>
