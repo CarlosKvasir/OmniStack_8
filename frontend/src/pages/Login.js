@@ -14,7 +14,8 @@ export default function Login({ history }) {
     const response = await api.post('/devs', {
       username,
     })
-    console.log(response);
+
+    const { _id } = response.data;
 
     history.push('/main');
   }
