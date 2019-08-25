@@ -5,6 +5,13 @@
 Copia do tinder para desenvolvedores com dados do github.  
 Feito por José Carlos
 
+## TO-DO
+Copie o .env.model para .env  
+```bash
+cp .env{.model,}
+```
+Coloque as informações do Banco de Dados MongoDB para que o backend funcione.
+
 ## Endpoints
 
 * **post /devs**  
