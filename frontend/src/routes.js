@@ -6,6 +6,9 @@ import Main from './pages/Main';
 
 export default Routers() {
   return (
-    <Route />
-  )
+    <BrowserRouter>
+      <Route path="/" component={Login} />
+      <Route path="/main" component={Main} />
+    </BrowserRouter>
+  );
 }
