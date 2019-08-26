@@ -7,10 +7,16 @@
  */
 
 import React from 'react';
-import { Text } from 'react-native';
+import {View, Text} from 'react-native';
 
-export default const App = () => {
+export default function App() {
   return (
-    <Text>Hello World</Text>;
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: '#7159C1',
+      }}>
+      <Text>Hello World</Text>
+    </View>
   );
-};
+}
