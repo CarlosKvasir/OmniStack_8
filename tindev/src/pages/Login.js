@@ -1,6 +1,10 @@
 import React from 'react';
-import {View} from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 export default function Login() {
-  return <View />;
+  return <View style={style.container} />;
 }
+
+const style = StyleSheet.create({
+  container: {},
+});
