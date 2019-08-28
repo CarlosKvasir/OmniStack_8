@@ -1,7 +1,8 @@
 import React from 'react';
 import {
-  View,
+  KeyboardAvoidingView,
   StyleSheet,
+  Platform,
   Image,
   Text,
   TextInput,
@@ -12,7 +13,10 @@ import logo from '../assets/logo.png';
 
 export default function Login() {
   return (
-    <View style={style.container}>
+    <KeyboardAvoidingView
+      behavior="padding"
+      enabled={Platform.OS === 'ios'}
+      style={style.container}>
       <Image source={logo} />
 
       <TextInput
@@ -26,7 +30,7 @@ export default function Login() {
       <TouchableOpacity style={style.button}>
         <Text style={style.buttonText}>Enviar</Text>
       </TouchableOpacity>
-    </View>
+    </KeyboardAvoidingView>
   );
 }
 
