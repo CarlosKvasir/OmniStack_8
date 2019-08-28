@@ -16,6 +16,8 @@ export default function Login() {
       <Image source={logo} />
 
       <TextInput
+        autoCapitalize="none"
+        autoCorrect={false}
         placeholder="Digite seu usuário no Github"
         placeholderTextColor="#999"
         style={style.input}
